@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
+    background-color: #fbfCD4;
+}
+
+section{
+    text-align: center;
+}
+
+h1 {
+    font-size: 90px;
+    margin-bottom: 50px;
+    margin-top: 30px
+}
+
+.x {
+    font-size: 40px;
+    color: #FBC403
+}
+
+.o {
+    font-size: 30px;
+}
+
+input[type='text'] {
+    font-size:30px
+}
+
+.player-selection {
+    color: #FBC403;
+    background-color: #333333;
+    position: fixed;
+    left: 39%;
+    top: 25%;
+    border: 1px solid black;
+    height: 480px;
+    width: 320px;
+    font-size: 30px;
+}
+
+.p1-label {
+    display: block;
+    margin-top: 20px;
+}
+
+.p2-label {
+    display: block;
+    margin-top: 40px;  
+}
+
+.player1, .player2{
+height: 40px;
+width: 250px;
+}
+
+.player1:focus, .player2:focus {
+    outline:#FBC403;
+}
+
+.display-winner {
+    color:  #FBC403;
+    background-color: #333333;
+    position: fixed;
+    left: 39%;
+    top: 25%;
+    border: 1px solid black;
+    height: 340px;
+    width: 320px;
+    visibility: hidden;
+    font-size: 30px;
+}
+.start-game {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    height: 40px;
+    width: 80px;
+    font-family: 'Permanent Marker';
+    background-color: #FBC403;;
+}
+
+.start-game:focus {
+    border: none;
+    outline: none;
+}
+.game-container {
+display: grid;
+grid-template-columns: repeat(3,auto);
+width: 306px;
+margin: 50px auto;
+
+}
+
+.cell {
+width: 100px;
+height: 100px;
+border: 2px solid #FBC403;
+box-shadow: 2px 2px 5px #FBC403;
+cursor: pointer;
+font-size: 50px;
+background-color:#333333;
+color: #FBC403;
+}
+
+.game-restart {
+background-color: #333333;
+color: #FBC403;
+font-family: 'Permanent Marker';
+}
